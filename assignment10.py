@@ -1,58 +1,58 @@
-# my best solution without any bug (I assume)...
-# In some cases, older people cannot understand the explanation and do not enter 1 or 0.
-# We must let them write "Yes" or "No" in this situations.
-# Below codes takes the answers as str and converts them into bool True or False
-# This code also controls invalid entries and interminably warns the users 
-# until they enter only "Yes" or "No"
+# my best solution which tries to cover all possible entries (I assume)...
+#Â InÂ someÂ cases,Â olderÂ peopleÂ cannotÂ understandÂ theÂ explanationÂ andÂ doÂ notÂ enterÂ 1Â orÂ 0.
+#Â WeÂ mustÂ letÂ themÂ writeÂ "Yes"Â orÂ "No"Â inÂ thisÂ situations.
+#Â BelowÂ codesÂ takesÂ theÂ answersÂ asÂ strÂ andÂ convertsÂ themÂ intoÂ boolÂ TrueÂ orÂ False
+#Â ThisÂ codeÂ alsoÂ controlsÂ invalidÂ entriesÂ andÂ interminablyÂ warnsÂ theÂ usersÂ 
+#Â untilÂ theyÂ enterÂ onlyÂ "Yes"Â orÂ "No"
 
-while True :
-  while True :  # this loop continue until the user enters "Yes" or "No"
-    age = input("Are you a cigarette addict older than 75 years old?\
-\nPlease enter only 'Yes' or 'No': ").title().strip()
+whileÂ TrueÂ :
+Â Â whileÂ TrueÂ :Â Â #Â thisÂ loopÂ continueÂ untilÂ theÂ userÂ entersÂ "Yes"Â orÂ "No"
+Â Â Â Â ageÂ =Â input("AreÂ youÂ aÂ cigaretteÂ addictÂ olderÂ thanÂ 75Â yearsÂ old?\
+\nPleaseÂ enterÂ onlyÂ 'Yes'Â orÂ 'No':Â ").title().strip()
 
-    if age == "Yes" :
-      age = True
-      break
-    elif age == "No" :
-      age = False
-      break
-    else :
-      print("Invalid entry! Please enter only 'Yes' or 'No")
-      
-  while True :  # this loop continue until the user enters "Yes" or "No"
-     chronic = input("Do you have a severe chronic disease?\
-\nPlease enter only 'Yes' or 'No': ").title().strip()
+Â Â Â Â ifÂ ageÂ ==Â "Yes"Â :
+Â Â Â Â Â Â ageÂ =Â True
+Â Â Â Â Â Â break
+Â Â Â Â elifÂ ageÂ ==Â "No"Â :
+Â Â Â Â Â Â ageÂ =Â False
+Â Â Â Â Â Â break
+Â Â Â Â elseÂ :
+Â Â Â Â Â Â print("InvalidÂ entry!Â PleaseÂ enterÂ onlyÂ 'Yes'Â orÂ 'No")
+Â Â Â Â Â Â 
+Â Â whileÂ TrueÂ :Â Â #Â thisÂ loopÂ continueÂ untilÂ theÂ userÂ entersÂ "Yes"Â orÂ "No"
+Â Â Â Â Â chronicÂ =Â input("DoÂ youÂ haveÂ aÂ severeÂ chronicÂ disease?\
+\nPleaseÂ enterÂ onlyÂ 'Yes'Â orÂ 'No':Â ").title().strip()
 
-     if chronic == "Yes" :
-         chronic = True
-         break
-     elif chronic == "No" :
-        chronic = False
-        break
-     else :
-        print("Invalid entry! Please enter only 'Yes' or 'No")
-  
-  while True :  # this loop continue until the user enters "Yes" or "No"
-    immune = input("Is your immune system too weak?\
-\nPlease enter only 'Yes' or 'No': ").title().strip()
+Â Â Â Â Â ifÂ chronicÂ ==Â "Yes"Â :
+Â Â Â Â Â Â Â Â Â chronicÂ =Â True
+Â Â Â Â Â Â Â Â Â break
+Â Â Â Â Â elifÂ chronicÂ ==Â "No"Â :
+Â Â Â Â Â Â Â Â chronicÂ =Â False
+Â Â Â Â Â Â Â Â break
+Â Â Â Â Â elseÂ :
+Â Â Â Â Â Â Â Â print("InvalidÂ entry!Â PleaseÂ enterÂ onlyÂ 'Yes'Â orÂ 'No")
+Â Â 
+Â Â whileÂ TrueÂ :Â Â #Â thisÂ loopÂ continueÂ untilÂ theÂ userÂ entersÂ "Yes"Â orÂ "No"
+Â Â Â Â immuneÂ =Â input("IsÂ yourÂ immuneÂ systemÂ tooÂ weak?\
+\nPleaseÂ enterÂ onlyÂ 'Yes'Â orÂ 'No':Â ").title().strip()
 
-    if immune == "Yes" :
-      immune = True
-      break
-    elif immune == "No" :
-     immune = False
-     break
-    else :
-      print("Invalid entry! Please enter only 'Yes' or 'No")
-    
+Â Â Â Â ifÂ immuneÂ ==Â "Yes"Â :
+Â Â Â Â Â Â immuneÂ =Â True
+Â Â Â Â Â Â break
+Â Â Â Â elifÂ immuneÂ ==Â "No"Â :
+Â Â Â Â Â immuneÂ =Â False
+Â Â Â Â Â break
+Â Â Â Â elseÂ :
+Â Â Â Â Â Â print("InvalidÂ entry!Â PleaseÂ enterÂ onlyÂ 'Yes'Â orÂ 'No")
+Â Â Â Â 
 
-# Below codes check whether you have risk of death due to the coronavirus
-  if age or chronic or immune :
-   print("\nYou are in the risky group ")
-   break
-  else :
-    print("\nYou are not in the risky group")
-    break
+#Â BelowÂ codesÂ checkÂ whetherÂ youÂ haveÂ riskÂ ofÂ deathÂ dueÂ toÂ theÂ coronavirus
+Â Â ifÂ ageÂ orÂ chronicÂ orÂ immuneÂ :
+Â Â Â print("\nYouÂ areÂ inÂ theÂ riskyÂ groupÂ ")
+Â Â Â break
+Â Â elseÂ :
+Â Â Â Â print("\nYouÂ areÂ notÂ inÂ theÂ riskyÂ group")
+Â Â Â Â break
 
 
 
@@ -73,21 +73,21 @@ Do you have a severe chronic disease?
 
 
 # Solution2: Shortest code
-# This code block assumes that the user always enter 1 for “Yes” and 0 for “No”
-age = bool(int(input("Are you a cigarette addict older than 75 years old?\
-  \nPlease enter 1 for Yes and 0 for No: ")))
+# This code block assumes that the user always enter 1 for â€œYesâ€ and 0 for â€œNoâ€
+ageÂ =Â bool(int(input("AreÂ youÂ aÂ cigaretteÂ addictÂ olderÂ thanÂ 75Â yearsÂ old?\
+Â Â \nPleaseÂ enterÂ 1Â forÂ YesÂ andÂ 0Â forÂ No:Â ")))
 
-chronic = bool(int(input("Do you have a severe chronic disease?\
-  \nPlease enter 1 for Yes and 0 for No: ")))
+chronicÂ =Â bool(int(input("DoÂ youÂ haveÂ aÂ severeÂ chronicÂ disease?\
+Â Â \nPleaseÂ enterÂ 1Â forÂ YesÂ andÂ 0Â forÂ No:Â ")))
 
-immune = bool(int(input("Is your immune system too weak?\
-  \nPlease enter 1 for Yes and 0 for No: ")))
+immuneÂ =Â bool(int(input("IsÂ yourÂ immuneÂ systemÂ tooÂ weak?\
+Â Â \nPleaseÂ enterÂ 1Â forÂ YesÂ andÂ 0Â forÂ No:Â ")))
 
-if age or chronic or immune :
-  print("You are in the risky group ")
+ifÂ ageÂ orÂ chronicÂ orÂ immuneÂ :
+Â Â print("YouÂ areÂ inÂ theÂ riskyÂ groupÂ ")
 
-else :
-  print("You are not in the risky group")
+elseÂ :
+Â Â print("YouÂ areÂ notÂ inÂ theÂ riskyÂ group")
 
 
 Are you a cigarette addict older than 75 years old?  
