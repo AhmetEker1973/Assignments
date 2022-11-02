@@ -1,6 +1,6 @@
 # num is taken as str to be able to count its digits and 
 # isnumeric() method distinguishes int and float numbers since
-# it returns false if any of the user-entered number's characters is  dot or comma
+# it returns false if num contains dot or comma
 
 num = input("Please enter a positive number: ")
 
