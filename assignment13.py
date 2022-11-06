@@ -1,5 +1,8 @@
 # Assignment-13 (Python - Is it a Prime Number?)
+<<<<<<< HEAD
+=======
 
+>>>>>>> 051fba16b415cf74f88215f258f7057404c43cc2
 sayı = int(input("Please enter a number"))
 
 if sayı > 1 :
